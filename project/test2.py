@@ -10,11 +10,11 @@ from PyQt6.QtCore import Qt
 
 # Список рецептов (замените на свои данные) и изображения
 recipes = {
-    "Wooden Sword": ["Wood x10", "Image/wood.jpg"],
-    "Copper Shortsword": ["Copper Bar x8", "Image/copper_bar.png"],
-    "Iron Shortsword": ["Iron Bar x8", "Image/iron_bar.png"],
-    "Silver Shortsword": ["Silver Bar x8", "Image/silver_bar.png"],
-    "Gold Shortsword": ["Gold Bar x8", "Image/gold_bar.png"],
+    "Wooden Sword": ["Wood x10", "Image/Wooden_Sword.png"],
+    "Copper Shortsword": ["Copper Bar x8", "Image/Copper_Shortsword.png"],
+    "Iron Shortsword": ["Iron Bar x8", "Image/Iron_Shortsword.png"],
+    "Silver Shortsword": ["Silver Bar x8", "Image/Silver_Shortsword.png"],
+    "Gold Shortsword": ["Gold Bar x8", "Image/Gold_Shortsword.png"],
     "Stone Pickaxe": ["Stone x20", "Image/stone.png"],
     "Wooden Axe": ["Wood x10", "Image/wood.png"],
     "Stone Axe": ["Stone x20", "Image/stone.png"],
@@ -60,20 +60,20 @@ class IntroWindow(QDialog):
 class TerrariaCraftingApp(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Крафт в Terraria")
+        self.setWindowTitle("Terraria Crafting")
 
         # Крафт
-        self.craft_label = QLabel("Предмет для крафта:")
+        self.craft_label = QLabel("Item to Craft:")
         self.craft_input = QLineEdit()
         self.craft_input.setReadOnly(True)  # Делаем поле ввода только для чтения
-        self.craft_button = QPushButton("Скрафтить")
+        self.craft_button = QPushButton("Craft")
         self.craft_button.clicked.connect(self.show_recipe)
 
-        self.recipe_label = QLabel("Рецепт:")
+        self.recipe_label = QLabel("Recipe:")
         self.recipe_list = QComboBox()
         self.recipe_list.addItems(recipes.keys())
         self.recipe_list.currentTextChanged.connect(self.set_craft_input)
-        self.recipe_list.currentTextChanged.connect(self.update_image)
+        self.recipe_list.currentTextChanged.connect(self.update_image)  # Вернули строчку
 
         self.recipe_image_label = QLabel()
         self.recipe_image_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
@@ -100,7 +100,7 @@ class TerrariaCraftingApp(QWidget):
                 pixmap = pixmap.scaled(200, 200, Qt.AspectRatioMode.KeepAspectRatio)
                 self.recipe_image_label.setPixmap(pixmap)
             except FileNotFoundError:
-                print(f"Изображение не найдено для {selected_item} по пути {image_path}")
+                print(f"Image not found for {selected_item} at {image_path}")
                 self.recipe_image_label.clear()
 
     def show_recipe(self):
@@ -111,7 +111,7 @@ class TerrariaCraftingApp(QWidget):
 
             # Создаем QMessageBox с вертикальным макетом
             message_box = QMessageBox()
-            message_box.setWindowTitle("Рецепт")
+            message_box.setWindowTitle("Recipe")
             vbox = QVBoxLayout()
 
             # Добавляем текст рецепта
@@ -124,8 +124,8 @@ class TerrariaCraftingApp(QWidget):
                 material_count = int(material.split(" ")[1])
 
                 # Проверяем, есть ли изображение для этого материала
-                if f"Image/{material_name.lower()}.jpg" in recipes:
-                    image_path = f"Image/{material_name.lower()}.jpg"
+                if f"Image/{material_name.lower()}.png" in recipes:
+                    image_path = f"Image/{material_name.lower()}.png"
                     try:
                         pixmap = QPixmap(image_path)
                         pixmap = pixmap.scaled(50, 50, Qt.AspectRatioMode.KeepAspectRatio)
@@ -138,16 +138,15 @@ class TerrariaCraftingApp(QWidget):
                         hbox.addWidget(QLabel(f"x{material_count}"))
                         vbox.addLayout(hbox)
                     except FileNotFoundError:
-                        print(f"Изображение не найдено для {material_name} по пути {image_path}")
+                        print(f"Image not found for {material_name} at {image_path}")
 
             message_box.setLayout(vbox)
             message_box.exec()
         else:
-            QMessageBox.warning(self, "Ошибка", "Предмет не найден!")
+            QMessageBox.warning(self, "Error", "Item not found!")
 
     def set_craft_input(self, text):
         self.craft_input.setText(text)
-
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

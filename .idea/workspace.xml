@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e24a9e7-c0bb-40ef-a35e-b1ec93035dcc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PyQT Project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/Image/copper.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/Image/wood.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/test2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Image/copper.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Image/wood.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/test2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +55,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.1.executor": "Run",
     "Python.test.executor": "Run",
     "Python.test2.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -92,5 +87,16 @@
       <updated>1729603856297</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
