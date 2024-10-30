@@ -52,7 +52,7 @@ class TerrariaCraftingApp(QWidget):
 
         # Крафт
         self.craft_label = QLabel("Item to Craft:")
-        self.craft_input = QLineEdit()
+        self.craft_input = QLineEdit("Wooden Sword")
         self.craft_input.setReadOnly(True)  # Делаем поле ввода только для чтения
         self.craft_button = QPushButton("Craft")
         self.craft_button.clicked.connect(self.show_recipe)
@@ -102,10 +102,10 @@ class TerrariaCraftingApp(QWidget):
                 self.recipe_image_label.clear()
 
     def show_recipe(self):
-        item_name = self.craft_input.text()
-        if item_name in recipes:
-            recipe = recipes[item_name]
-            QMessageBox.information(self, "Recipe", recipe[0])
+        selected_item = self.recipe_list.currentText()
+        if selected_item in recipes:
+            string = "\n".join(recipes[selected_item][0])
+            QMessageBox.information(self, "Recipe", string)
         else:
             QMessageBox.warning(self, "Error", "Item not found!")
 
@@ -120,22 +120,11 @@ class TerrariaCraftingApp(QWidget):
                 material = materials.split(" x")
                 material_name, material_count = material[0], material[1]
 
-                # Загрузка изображения материала (при наличии)
-                image_path = f"Image/{material_name}.png"
-                image_label = QLabel()
-                try:
-                    pixmap = QPixmap(image_path)
-                    pixmap = pixmap.scaled(50, 50, Qt.AspectRatioMode.KeepAspectRatio)
-                    image_label.setPixmap(pixmap)
-                except FileNotFoundError:
-                    image_label.setText("")  # Если изображение не найдено, просто оставляем пустое место
-
                 item = QListWidgetItem(f"{material_name} x {material_count}")
                 item.setSizeHint(QSize(150, 50))  # Устанавливаем размер элемента
                 self.materials_list.addItem(item)
         else:
             self.materials_list.clear()
-
 
 
 if __name__ == '__main__':
