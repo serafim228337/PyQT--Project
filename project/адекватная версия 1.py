@@ -16,20 +16,19 @@ recipes = {
     "Silver Shortsword": ["Silver Bar x8", "Image/Silver_Shortsword.png"],
     "Gold Shortsword": ["Gold Bar x8", "Image/Gold_Shortsword.png"],
     "Stone Pickaxe": ["Stone x20", "Image/stone.png"],
-    "Wooden Axe": ["Wood x10", "Image/wood.png"],
+    "Wooden Axe": ["Wood x10", "Image/Wood.png"],
     "Stone Axe": ["Stone x20", "Image/stone.png"],
     "Copper Axe": ["Copper Bar x8", "Image/copper_bar.png"],
     "Iron Axe": ["Iron Bar x8", "Image/iron_bar.png"],
     "Silver Axe": ["Silver Bar x8", "Image/silver_bar.png"],
     "Gold Axe": ["Gold Bar x8", "Image/gold_bar.png"],
-    "Wooden Hammer": ["Wood x10", "Image/wood.png"],
+    "Wooden Hammer": ["Wood x10", "Image/Wood.png"],
     "Stone Hammer": ["Stone x20", "Image/stone.png"],
     "Copper Hammer": ["Copper Bar x8", "Image/copper_bar.png"],
     "Iron Hammer": ["Iron Bar x8", "Image/iron_bar.png"],
     "Silver Hammer": ["Silver Bar x8", "Image/silver_bar.png"],
     "Gold Hammer": ["Gold Bar x8", "Image/gold_bar.png"],
-    "Wooden Pickaxe": ["Wood x10", "Image/wood.png"],
-    "Stone Pickaxe": ["Stone x20", "Image/stone.png"],
+    "Wooden Pickaxe": ["Wood x10", "Image/Wood.png"],
     "Copper Pickaxe": ["Copper Bar x8", "Image/copper_bar.png"],
     "Iron Pickaxe": ["Iron Bar x8", "Image/iron_bar.png"],
     "Silver Pickaxe": ["Silver Bar x8", "Image/silver_bar.png"],
@@ -107,41 +106,7 @@ class TerrariaCraftingApp(QWidget):
         item_name = self.craft_input.text()
         if item_name in recipes:
             recipe = recipes[item_name]
-            materials = recipe[0].split(" x")
-
-            # Создаем QMessageBox с вертикальным макетом
-            message_box = QMessageBox()
-            message_box.setWindowTitle("Recipe")
-            vbox = QVBoxLayout()
-
-            # Добавляем текст рецепта
-            text_label = QLabel(recipe[0])
-            vbox.addWidget(text_label)
-
-            # Добавляем изображения ресурсов
-            for material in materials:
-                material_name = material.split(" ")[0]
-                material_count = int(material.split(" ")[1])
-
-                # Проверяем, есть ли изображение для этого материала
-                if f"Image/{material_name.lower()}.png" in recipes:
-                    image_path = f"Image/{material_name.lower()}.png"
-                    try:
-                        pixmap = QPixmap(image_path)
-                        pixmap = pixmap.scaled(50, 50, Qt.AspectRatioMode.KeepAspectRatio)
-                        image_label = QLabel()
-                        image_label.setPixmap(pixmap)
-
-                        # Добавляем изображение в горизонтальный макет
-                        hbox = QHBoxLayout()
-                        hbox.addWidget(image_label)
-                        hbox.addWidget(QLabel(f"x{material_count}"))
-                        vbox.addLayout(hbox)
-                    except FileNotFoundError:
-                        print(f"Image not found for {material_name} at {image_path}")
-
-            message_box.setLayout(vbox)
-            message_box.exec()
+            QMessageBox.information(self, "Recipe", recipe[0])
         else:
             QMessageBox.warning(self, "Error", "Item not found!")
 
