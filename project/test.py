@@ -95,7 +95,7 @@ class TerrariaCraftingApp(QWidget):
             image_path = recipes[selected_item][1]
             try:
                 pixmap = QPixmap(image_path)
-                pixmap = pixmap.scaled(200, 200, Qt.AspectRatioMode.KeepAspectRatio)
+                pixmap = pixmap.scaled(100, 200, Qt.AspectRatioMode.KeepAspectRatio)
                 self.recipe_image_label.setPixmap(pixmap)
             except FileNotFoundError:
                 print(f"Image not found for {selected_item} at {image_path}")
@@ -120,9 +120,39 @@ class TerrariaCraftingApp(QWidget):
                 material = materials.split(" x")
                 material_name, material_count = material[0], material[1]
 
-                item = QListWidgetItem(f"{material_name} x {material_count}")
+                image_path = f"Image/Materials/{material_name}.png"
+                image_label = QLabel()
+                try:
+                    pixmap = QPixmap(image_path)
+                    pixmap = pixmap.scaled(30, 30, Qt.AspectRatioMode.KeepAspectRatio)
+                    image_label.setPixmap(pixmap)
+                except FileNotFoundError:
+                    image_label.setText("")  # Если изображение не найдено, просто оставляем пустое место
+
+                hbox = QHBoxLayout()
+                hbox.setSpacing(10)  # Устанавливаем отступ в 5 пикселей
+
+                # Добавляем изображение слева от текста
+                hbox.addWidget(image_label, alignment=Qt.AlignmentFlag.AlignLeft)
+
+                # Добавляем текст с выравниванием влево
+
+                text_label = QLabel(f"{material_name} x {material_count}")
+                text_label.setFixedSize(200, 20)
+                text_label.setAlignment(Qt.AlignmentFlag.AlignLeft)
+                hbox.addWidget(text_label)
+
+                # Создаем новый QWidget, чтобы установить в нем макет
+                widget = QWidget()
+                widget.setLayout(hbox)  # Устанавливаем hbox в качестве макета для widget
+
+                # Создаем новый элемент QListWidgetItem с использованием widget
+                item = QListWidgetItem()
                 item.setSizeHint(QSize(150, 50))  # Устанавливаем размер элемента
                 self.materials_list.addItem(item)
+                self.materials_list.setItemWidget(item, widget)  # Устанавливаем widget как виджет для элемента
+
+
         else:
             self.materials_list.clear()
 

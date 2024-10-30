@@ -3,7 +3,7 @@ from PyQt6.QtWidgets import (
     QApplication, QWidget, QLabel, QLineEdit, QPushButton, QGridLayout,
     QComboBox, QMessageBox, QVBoxLayout, QListWidget, QListWidgetItem,
     QWidget, QLabel, QHBoxLayout, QMainWindow, QDialog,
-    QPushButton, QVBoxLayout, QLabel, QSpacerItem, QSizePolicy
+    QPushButton, QVBoxLayout, QLabel, QSpacerItem, QSizePolicy, QTextEdit
 )
 from PyQt6.QtGui import QPixmap
 from PyQt6.QtCore import Qt, QSize
@@ -28,21 +28,68 @@ recipes = {
 class IntroWindow(QDialog):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Welcome to Terraria Crafting!")
-        self.resize(400, 200)
+        self.setWindowTitle("Добро пожаловать в Terraria Crafting App!")
 
+        # Создаем QLabel для заголовка
+        title_label = QLabel("Terraria Crafting App")
+        title_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        # Создаем QLabel для информации о приложении
+        info_label = QLabel("Приложение для поиска рецептов в игре Terraria")
+        info_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        # Устанавливаем размер шрифта
+        font = info_label.font()
+        font.setPointSize(10)
+        info_label.setFont(font)
+
+        # Создаем кнопку "Info"
+        info_button = QPushButton("Информация об игре")
+        info_button.clicked.connect(self.show_info)
+
+        # Создаем кнопку "Начать"
+        start_button = QPushButton("Начать")
+        start_button.clicked.connect(self.open_crafting_app)
+
+        # Создаем вертикальный макет для элементов
         vbox = QVBoxLayout()
-
-        label = QLabel(
-            "Welcome to the Terraria Crafting app! \nThis app shows you the recipes for various Terraria items.")
-        label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        vbox.addWidget(label)
-
-        button = QPushButton("Continue")
-        button.clicked.connect(self.close)
-        vbox.addWidget(button)
+        vbox.addWidget(title_label)
+        vbox.addWidget(info_label)
+        vbox.addWidget(info_button)
+        vbox.addWidget(start_button)
+        vbox.addStretch()  # Добавляем растягивающий элемент для выравнивания
 
         self.setLayout(vbox)
+
+    def show_info(self):
+        # Создаем диалоговое окно для информации
+        info_dialog = QDialog(self)
+        info_dialog.setWindowTitle("О Terraria")
+
+        # Добавляем текст описания Terraria
+        text_edit = QTextEdit(info_dialog)
+        text_edit.setText("Terraria - это инди игра в жанре песочницы с элементами экшена и приключений. \n"
+                          "Игрок создает своего персонажа, исследует мир, строит дома, "
+                          "создает оружие и сражается с разнообразными монстрами. \n"
+                          "Игра отличается большой свободой действий, "
+                          "возможностью крафта и исследования огромного мира. \n")
+        text_edit.setReadOnly(True)  # Делаем текст нередактируемым
+
+        # Добавляем кнопку "Закрыть"
+        close_button = QPushButton("Закрыть", info_dialog)
+        close_button.clicked.connect(info_dialog.close)
+
+        # Создаем вертикальный макет для элементов диалогового окна
+        vbox = QVBoxLayout()
+        vbox.addWidget(text_edit)
+        vbox.addWidget(close_button)
+
+        info_dialog.setLayout(vbox)
+        info_dialog.exec()
+
+    def open_crafting_app(self):
+        window = TerrariaCraftingApp()
+        window.show()
+        self.close()
 
 
 class TerrariaCraftingApp(QWidget):
@@ -75,6 +122,7 @@ class TerrariaCraftingApp(QWidget):
 
         # Макет
         grid = QGridLayout()
+
         grid.addWidget(self.craft_label, 0, 0)
         grid.addWidget(self.craft_input, 0, 1)
         grid.addWidget(self.craft_button, 1, 0, 1, 2)
@@ -160,8 +208,7 @@ class TerrariaCraftingApp(QWidget):
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     intro = IntroWindow()
-    intro.exec()  # Отображаем вступительное окно
-
+    intro.exec()
     window = TerrariaCraftingApp()
     window.show()
     sys.exit(app.exec())
