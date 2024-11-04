@@ -5,9 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e24a9e7-c0bb-40ef-a35e-b1ec93035dcc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/project/Image/Materials/Copper Bar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/Materials/Bee_Keeper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/Materials/Broken_Hero_Sword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/Materials/Enchanted_Sword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/Materials/Influx_Waver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/Materials/Iron_Bar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/Materials/Meowmere.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/Materials/Seedler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/Materials/Soul_of_Light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/Materials/Star_Wrath.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/Materials/Starfury.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/Materials/Terra_Blade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/Materials/The_Horsemans_Blade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/Materials/True_Excalibur.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/Materials/True_Nights_Edge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/item/Bee_Keeper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/item/Copper_Shortsword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/item/Enchanted_Sword_item.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/item/Influx_Waver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/item/Meowmere.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/item/Seedler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/item/Star_Wrath.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/item/Starfury.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/item/Terra_Blade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/item/The_Horsemans_Blade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/Image/item/Zenith.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Image/Copper_Shortsword.png" beforeDir="false" afterPath="$PROJECT_DIR$/project/Image/Materials/Copper_Shortsword.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Image/Gold_Shortsword.png" beforeDir="false" afterPath="$PROJECT_DIR$/project/Image/item/Gold_Shortsword.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Image/Iron_Shortsword.png" beforeDir="false" afterPath="$PROJECT_DIR$/project/Image/item/Iron_Shortsword.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Image/Materials/Copper Bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/project/Image/Materials/Copper_Bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Image/Silver_Shortsword.png" beforeDir="false" afterPath="$PROJECT_DIR$/project/Image/item/Silver_Shortsword.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Image/Wooden_Sword.png" beforeDir="false" afterPath="$PROJECT_DIR$/project/Image/item/Wooden_Sword.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Image/Work_Bench.png" beforeDir="false" afterPath="$PROJECT_DIR$/project/Image/item/Work_Bench.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/адекватная версия 1.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/адекватная версия 1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,12 +90,18 @@
     "Python.адекватная версия 1.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Documents/PyQT Project Serafim/PyQT Project/project/Image/item",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documents\PyQT Project Serafim\PyQT Project\project\Image\item" />
+      <recent name="D:\Documents\PyQT Project Serafim\PyQT Project\project\Image\Materials" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Documents\PyQT Project Serafim\PyQT Project\project\Image\Materials" />
+      <recent name="D:\Documents\PyQT Project Serafim\PyQT Project\project\Image\item" />
       <recent name="D:\Documents\PyQT Project Serafim\PyQT Project\project\Image" />
       <recent name="D:\Documents\PyQT Project Serafim\PyQT Project\project" />
       <recent name="D:\Documents\PyQT Project Serafim\PyQT Project" />

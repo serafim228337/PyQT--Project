@@ -9,19 +9,25 @@ from PyQt6.QtGui import QPixmap
 from PyQt6.QtCore import Qt, QSize
 
 recipes = {
-    "Wooden Sword": [["Wood x10"], "Image/Wooden_Sword.png"],
-    "Copper Shortsword": [["Copper Bar x8", "Wood x10"], "Image/Copper_Shortsword.png"],
-    "Iron Shortsword": [["Iron Bar x8"], "Image/Iron_Shortsword.png"],
-    "Silver Shortsword": [["Silver Bar x8"], "Image/Silver_Shortsword.png"],
-    "Gold Shortsword": [["Gold Bar x8"], "Image/Gold_Shortsword.png"],
-    "Copper Axe": [["Copper Bar x8"], "Image/copper_bar.png"],
-    "Iron Axe": [["Iron Bar x8"], "Image/iron_bar.png"],
-    "Silver Axe": [["Silver Bar x8"], "Image/silver_bar.png"],
-    "Gold Axe": [["Gold Bar x8"], "Image/gold_bar.png"],
-    "Copper Pickaxe": [["Copper Bar x8"], "Image/copper_bar.png"],
-    "Iron Pickaxe": [["Iron Bar x8"], "Image/iron_bar.png"],
-    "Silver Pickaxe": [["Silver Bar x8"], "Image/silver_bar.png"],
-    "Gold Pickaxe": [["Gold Bar x8"], "Image/gold_bar.png"],
+    "Wooden Sword": [["Wood x10"], "Image/item/Wooden_Sword.png"],
+    "Copper Shortsword": [["Copper_Bar x5"], "Image/item/Copper_Shortsword.png"],
+    "Iron Shortsword": [["Iron_Bar x6"], "Image/item/Iron_Shortsword.png"],
+    "Silver Shortsword": [["Silver_Bar x6"], "Image/item/Silver_Shortsword.png"],
+    "Gold Shortsword": [["Gold_Bar x6"], "Image/item/Gold_Shortsword.png"],
+    "Copper Axe": [["Copper_Bar x6", "Wood x3"], "Image/item/Copper_Axe.png"],
+    "Iron Axe": [["Iron_Bar x8", "Wood x3"], "Image/item/Iron_Axe.png"],
+    "Silver Axe": [["Silver_Bar x8", "Wood x3"], "Image/item/Silver_Axe.png"],
+    "Gold Axe": [["Gold_Bar x8", "Wood x3"], "Image/item/Gold_Axe.png"],
+    "Copper Pickaxe": [["Copper_Bar x8", "Wood x4"], "Image/item/Copper_Pickaxe.png"],
+    "Iron Pickaxe": [["Iron_Bar x8", "Wood x4"], "Image/item/Iron_Pickaxe.png"],
+    "Silver Pickaxe": [["Silver_Bar x8", "Wood x4"], "Image/item/Silver_Pickaxe.png"],
+    "Gold Pickaxe": [["Gold_Bar x8", "Wood x4"], "Image/item/Gold_Pickaxe.png"],
+    "Amethyst Staff": [["Copper_Bar x10", "Amethyst x8", ], "Image/item/Amethyst_Staff.png"],
+    "Zenith": [
+        ["Terra_Blade x1", "Meowmere x1", "Star_Wrath x1", "Influx_Waver x1", "The_Horsemans_Blade x1", "Seedler x1",
+         "Starfury x1", "Bee_Keeper x1", "Enchanted_Sword x1", "Copper_Shortsword x1"], "Image/item/Zenith.png"],
+    "Terra_Blade": [["Broken_Hero_Sword x1", "True_Excalibur x1", "True_Nights_Edge x1", ],
+                    "Image/item/Terra_Blade.png"],
 }
 
 
