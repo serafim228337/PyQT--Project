@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e24a9e7-c0bb-40ef-a35e-b1ec93035dcc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/project/last_vers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/insert_recipes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/favorite_recipes.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/last_vers.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/Версия с регистрацией и добавлением в избранное.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/адекватная версия 1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/версия с регистрацией.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +59,10 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Python.1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.last_vers.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.recipes.executor&quot;: &quot;Run&quot;,
+    &quot;Python.recipes_take.executor&quot;: &quot;Run&quot;,
     &quot;Python.test 3.executor&quot;: &quot;Run&quot;,
     &quot;Python.test.executor&quot;: &quot;Run&quot;,
     &quot;Python.test2.executor&quot;: &quot;Run&quot;,
@@ -74,11 +82,11 @@
       <recent name="D:\Documents\PyQT Project Serafim\PyQT Project\project\Image\Materials" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documents\PyQT Project Serafim\PyQT Project\project" />
+      <recent name="D:\Documents\PyQT Project Serafim\PyQT Project" />
       <recent name="D:\Documents\PyQT Project Serafim\PyQT Project\project\Image\Materials" />
       <recent name="D:\Documents\PyQT Project Serafim\PyQT Project\project\Image\item" />
       <recent name="D:\Documents\PyQT Project Serafim\PyQT Project\project\Image" />
-      <recent name="D:\Documents\PyQT Project Serafim\PyQT Project\project" />
-      <recent name="D:\Documents\PyQT Project Serafim\PyQT Project" />
     </key>
   </component>
   <component name="RunManager">
