@@ -1,7 +1,6 @@
+import os
 import sqlite3
 import sys
-import os
-from insert_recipes import insert_recipes
 
 from PyQt6.QtCore import Qt, QSize
 from PyQt6.QtGui import QPixmap
@@ -12,23 +11,25 @@ from PyQt6.QtWidgets import (
     QPushButton, QVBoxLayout, QLabel, QTextEdit, QInputDialog
 )
 
+from insert_recipes import insert_recipes
+
+
 def resource_path(relative_path):
-    """ Get absolute path to resource, works for dev and for PyInstaller """
     try:
-        # PyInstaller creates a temp folder and stores path in sys._MEIPASS
         base_path = sys._MEIPASS
     except AttributeError:
         base_path = os.path.abspath(".")
 
     return os.path.join(base_path, relative_path)
 
+
 def get_database_path():
-    """ Get the path to the database file """
     user_home = os.path.expanduser("~")
     database_dir = os.path.join(user_home, "TerrariaCraftingApp")
     if not os.path.exists(database_dir):
         os.makedirs(database_dir)
     return os.path.join(database_dir, "TerrariaApp.db")
+
 
 class IntroWindow(QDialog):
     def __init__(self):
@@ -39,7 +40,7 @@ class IntroWindow(QDialog):
         self.cursor = self.conn.cursor()
 
         self.create_tables()
-        insert_recipes(get_database_path())  # Вызов функции для вставки рецептов
+        insert_recipes(get_database_path())  # Вставка рецептов
 
         self.setup_ui()
 
@@ -181,6 +182,7 @@ class IntroWindow(QDialog):
         self.conn.close()
         event.accept()
 
+
 class TerrariaCraftingApp(QWidget):
     def __init__(self, user_id):
         super().__init__()
@@ -200,6 +202,7 @@ class TerrariaCraftingApp(QWidget):
         self.craft_input.setReadOnly(True)
         self.craft_button = QPushButton("Крафт")
         self.craft_button.clicked.connect(self.show_recipe)
+        self.craft_button.clicked.connect(self.export_materials_to_txt)  # Добавлено для экспорта материалов
         self.craft_button.clicked.connect(self.update_materials_list)
 
         self.recipe_label = QLabel("Рецепт:")
@@ -345,8 +348,20 @@ class TerrariaCraftingApp(QWidget):
         else:
             self.materials_list.clear()
 
+    def export_materials_to_txt(self):
+        selected_item = self.recipe_list.currentText()
+        if selected_item:
+            self.cursor.execute("SELECT materials FROM recipes WHERE name = ?", (selected_item,))
+            materials = self.cursor.fetchone()[0]
+            file_path = os.path.join(os.path.dirname(os.path.abspath(sys.argv[0])), "recipes.txt")
+            with open(file_path, 'a', encoding='utf-8') as file:
+                file.write(f"\nМатериалы для {selected_item}:\n")
+                file.write(materials + "\n")
+            QMessageBox.information(self, "Успешно", f"Материалы для {selected_item} добавлены в {file_path}")
+
     def closeEvent(self, event):
         event.accept()
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

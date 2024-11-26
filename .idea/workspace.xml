@@ -6,56 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="8e24a9e7-c0bb-40ef-a35e-b1ec93035dcc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/Materials/Amethyst.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Materials/Amethyst.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/Materials/Bee_Keeper.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Materials/Bee_Keeper.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/Materials/Broken_Hero_Sword.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Materials/Broken_Hero_Sword.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/Materials/Copper_Bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Materials/Copper_Bar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/Materials/Copper_Shortsword.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Materials/Copper_Shortsword.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/Materials/Enchanted_Sword.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Materials/Enchanted_Sword.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/Materials/Gold_Bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Materials/Gold_Bar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/Materials/Influx_Waver.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Materials/Influx_Waver.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/Materials/Iron_Bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Materials/Iron_Bar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/Materials/Meowmere.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Materials/Meowmere.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/Materials/Seedler.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Materials/Seedler.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/Materials/Silver_Bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Materials/Silver_Bar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/Materials/Soul_of_Light.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Materials/Soul_of_Light.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/Materials/Star_Wrath.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Materials/Star_Wrath.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/Materials/Starfury.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Materials/Starfury.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/Materials/Terra_Blade.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Materials/Terra_Blade.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/Materials/The_Horsemans_Blade.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Materials/The_Horsemans_Blade.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/Materials/True_Excalibur.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Materials/True_Excalibur.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/Materials/True_Nights_Edge.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Materials/True_Nights_Edge.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/Materials/Wood.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Materials/Wood.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Amethyst_Staff.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Amethyst_Staff.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Bee_Keeper.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Bee_Keeper.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Copper_Axe.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Copper_Axe.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Copper_Pickaxe.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Copper_Pickaxe.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Copper_Shortsword.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Copper_Shortsword.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Enchanted_Sword_item.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Enchanted_Sword_item.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Gold_Axe.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Gold_Axe.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Gold_Pickaxe.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Gold_Pickaxe.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Gold_Shortsword.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Gold_Shortsword.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Influx_Waver.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Influx_Waver.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Iron_Axe.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Iron_Axe.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Iron_Pickaxe.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Iron_Pickaxe.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Iron_Shortsword.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Iron_Shortsword.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Meowmere.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Meowmere.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Seedler.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Seedler.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Silver_Axe.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Silver_Axe.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Silver_Pickaxe.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Silver_Pickaxe.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Silver_Shortsword.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Silver_Shortsword.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Star_Wrath.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Star_Wrath.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Starfury.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Starfury.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Terra_Blade.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Terra_Blade.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/The_Horsemans_Blade.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/The_Horsemans_Blade.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Wooden_Sword.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Wooden_Sword.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Work_Bench.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Work_Bench.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/Image/item/Zenith.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/item/Zenith.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/TerrariaApp.db" beforeDir="false" afterPath="$PROJECT_DIR$/TerrariaApp.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/insert_recipes.py" beforeDir="false" afterPath="$PROJECT_DIR$/insert_recipes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TerrariaApp.db" beforeDir="false" afterPath="$PROJECT_DIR$/terrariaapp.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/TerrariaCraftingApp/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/TerrariaCraftingApp/Analysis-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/TerrariaCraftingApp/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/TerrariaCraftingApp/EXE-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/TerrariaCraftingApp/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/TerrariaCraftingApp/PKG-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/TerrariaCraftingApp/PYZ-00.pyz" beforeDir="false" afterPath="$PROJECT_DIR$/build/TerrariaCraftingApp/PYZ-00.pyz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/TerrariaCraftingApp/TerrariaCraftingApp.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/TerrariaCraftingApp/TerrariaCraftingApp.pkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/TerrariaCraftingApp/xref-TerrariaCraftingApp.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/TerrariaCraftingApp/xref-TerrariaCraftingApp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/TerrariaCraftingApp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/dist/TerrariaCraftingApp.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insert_recipes.py" beforeDir="false" afterPath="$PROJECT_DIR$/insert_recipes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

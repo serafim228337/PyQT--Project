@@ -1,6 +1,6 @@
 import sqlite3
 
-def insert_recipes(db_path='TerrariaApp.db'):
+def insert_recipes(db_path='terrariaapp.db'):
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
 
