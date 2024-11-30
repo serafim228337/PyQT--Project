@@ -24,6 +24,7 @@ def resource_path(relative_path):
 
 
 def get_database_path():
+    #путь к файлу бд
     user_home = os.path.expanduser("~")
     database_dir = os.path.join(user_home, "TerrariaCraftingApp")
     if not os.path.exists(database_dir):
@@ -45,6 +46,7 @@ class IntroWindow(QDialog):
         self.setup_ui()
 
     def create_tables(self):
+        #создание таблиц
         self.cursor.execute("""
             CREATE TABLE IF NOT EXISTS users (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -68,6 +70,7 @@ class IntroWindow(QDialog):
         self.conn.commit()
 
     def setup_ui(self):
+        #интерфейс
         self.title_label = QLabel("Terraria Crafting App")
         self.title_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
@@ -98,6 +101,7 @@ class IntroWindow(QDialog):
         self.setLayout(vbox)
 
     def show_login_dialog(self):
+        #вход
         username, ok = QInputDialog.getText(self, "Вход", "Введите имя пользователя:")
         if ok and username:
             password, ok = QInputDialog.getText(self, "Вход", "Введите пароль:")
@@ -105,6 +109,7 @@ class IntroWindow(QDialog):
                 self.authenticate_user(username, password)
 
     def show_register_dialog(self):
+        #регистрация
         dialog = QDialog(self)
         dialog.setWindowTitle("Регистрация")
 
@@ -129,6 +134,7 @@ class IntroWindow(QDialog):
         dialog.exec()
 
     def authenticate_user(self, username, password):
+        #аутентификация пользователя
         self.cursor.execute("SELECT * FROM users WHERE username = ?", (username,))
         user = self.cursor.fetchone()
         if user:
@@ -141,6 +147,7 @@ class IntroWindow(QDialog):
             QMessageBox.warning(self, "Ошибка", "Пользователь не найден!")
 
     def register_user(self, username, password):
+        #регистрация пользователя
         self.cursor.execute("SELECT * FROM users WHERE username = ?", (username,))
         if self.cursor.fetchone():
             QMessageBox.warning(self, "Ошибка", "Пользователь с таким именем уже существует!")
@@ -151,6 +158,7 @@ class IntroWindow(QDialog):
         QMessageBox.information(self, "Успешно", "Пользователь успешно зарегистрирован!")
 
     def show_info(self):
+        #окно краткой информации об игре
         info_dialog = QDialog(self)
         info_dialog.setWindowTitle("О Terraria")
 
@@ -173,6 +181,7 @@ class IntroWindow(QDialog):
         info_dialog.exec()
 
     def open_crafting_app(self, user_id):
+        #открывает основное приложение, закрываем интро
         self.close()
         global window
         window = TerrariaCraftingApp(user_id)
@@ -245,21 +254,25 @@ class TerrariaCraftingApp(QWidget):
         self.update_image()
 
     def load_recipes(self):
+        #загрузка рецептов из бд
         self.cursor.execute("SELECT name FROM recipes")
         recipes = [row[0] for row in self.cursor.fetchall()]
         self.recipe_list.addItems(recipes)
 
     def load_favorite_recipes(self):
+        #загрузка избранных рецептов
         self.cursor.execute("SELECT recipe_name FROM favorite_recipes WHERE user_id = ?", (self.user_id,))
         self.favorite_recipes = [row[0] for row in self.cursor.fetchall()]
         self.update_favorite_button()
         return self.favorite_recipes
 
     def toggle_favorite(self):
+        #проверка на избранное
         selected_item = self.recipe_list.currentText()
         item = QListWidgetItem(selected_item)
 
         if selected_item in self.favorite_recipes:
+            #убрать рецепт из избранного
             list_items = self.favorite_recipes_list.findItems(selected_item, Qt.MatchFlag.MatchExactly)
             for item in list_items:
                 self.favorite_recipes_list.takeItem(self.favorite_recipes_list.row(item))
@@ -267,6 +280,7 @@ class TerrariaCraftingApp(QWidget):
             self.cursor.execute("DELETE FROM favorite_recipes WHERE user_id = ? AND recipe_name = ?",
                                 (self.user_id, selected_item))
         else:
+            # добавить рецепт
             self.favorite_recipes.append(selected_item)
             self.favorite_recipes_list.addItem(item)
             self.cursor.execute("INSERT INTO favorite_recipes (user_id, recipe_name) VALUES (?, ?)",
@@ -276,6 +290,7 @@ class TerrariaCraftingApp(QWidget):
         self.update_favorite_button()
 
     def update_favorite_button(self):
+        #обновить текст кнопки избранное
         selected_item = self.recipe_list.currentText()
         if selected_item in self.favorite_recipes:
             self.favorite_button.setText("Избранное (✔)")
@@ -283,6 +298,7 @@ class TerrariaCraftingApp(QWidget):
             self.favorite_button.setText("Избранное")
 
     def update_image(self):
+        #обновить изображение
         selected_item = self.recipe_list.currentText()
         self.update_favorite_button()
         if selected_item:
@@ -297,6 +313,7 @@ class TerrariaCraftingApp(QWidget):
                 self.recipe_image_label.clear()
 
     def show_recipe(self):
+        #показать детали рецепта
         selected_item = self.recipe_list.currentText()
         if selected_item:
             self.cursor.execute("SELECT materials FROM recipes WHERE name = ?", (selected_item,))
@@ -306,10 +323,12 @@ class TerrariaCraftingApp(QWidget):
             QMessageBox.warning(self, "Error", "Item not found!")
 
     def set_craft_input(self, text):
+        #взять название выбранного рецепта
         self.recipe_list.setCurrentText(text)
         self.craft_input.setText(text)
 
     def update_materials_list(self):
+        #обновления списка материалов
         selected_item = self.recipe_list.currentText()
         if selected_item:
             self.materials_list.clear()
@@ -349,6 +368,7 @@ class TerrariaCraftingApp(QWidget):
             self.materials_list.clear()
 
     def export_materials_to_txt(self):
+        #вывод рецепта в txt файл
         selected_item = self.recipe_list.currentText()
         if selected_item:
             self.cursor.execute("SELECT materials FROM recipes WHERE name = ?", (selected_item,))
