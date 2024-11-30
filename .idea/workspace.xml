@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e24a9e7-c0bb-40ef-a35e-b1ec93035dcc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Image/readme/YOWTM_yapx.ru.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/readme/craft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/readme/intro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/readme/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/readme/main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/readme/materials.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/readme/ronald-van-egdom-hallow3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/readme/txt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image/readme/YOWTM_yapx.ru.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/readme/fav.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
