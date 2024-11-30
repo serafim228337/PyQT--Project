@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e24a9e7-c0bb-40ef-a35e-b1ec93035dcc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Image/readme/YOWTM_yapx.ru.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +45,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2nnLNnGuqu2LqkQfCP7AVSx02en" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -75,11 +78,11 @@
       <recent name="D:\Documents\PyQT Project Serafim\PyQT Project\project\Image\Materials" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documents\PyQT Project Serafim\PyQT Project\Image\readme" />
       <recent name="D:\Documents\PyQT Project Serafim\PyQT Project" />
       <recent name="D:\Documents\PyQT Project Serafim\PyQT Project\project" />
       <recent name="D:\Documents\PyQT Project Serafim\PyQT Project\project\Image\Materials" />
       <recent name="D:\Documents\PyQT Project Serafim\PyQT Project\project\Image\item" />
-      <recent name="D:\Documents\PyQT Project Serafim\PyQT Project\project\Image" />
     </key>
   </component>
   <component name="RunManager">
