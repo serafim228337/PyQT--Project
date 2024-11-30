@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e24a9e7-c0bb-40ef-a35e-b1ec93035dcc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TerrariaApp.db" beforeDir="false" afterPath="$PROJECT_DIR$/terrariaapp.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/TerrariaCraftingApp/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/TerrariaCraftingApp/Analysis-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/TerrariaCraftingApp/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/TerrariaCraftingApp/EXE-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/TerrariaCraftingApp/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/TerrariaCraftingApp/PKG-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/TerrariaCraftingApp/PYZ-00.pyz" beforeDir="false" afterPath="$PROJECT_DIR$/build/TerrariaCraftingApp/PYZ-00.pyz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/TerrariaCraftingApp/TerrariaCraftingApp.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/TerrariaCraftingApp/TerrariaCraftingApp.pkg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/TerrariaCraftingApp/xref-TerrariaCraftingApp.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/TerrariaCraftingApp/xref-TerrariaCraftingApp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/TerrariaCraftingApp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/dist/TerrariaCraftingApp.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insert_recipes.py" beforeDir="false" afterPath="$PROJECT_DIR$/insert_recipes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
