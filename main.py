@@ -363,7 +363,7 @@ class TerrariaCraftingApp(QWidget):
                 item.setSizeHint(QSize(150, 50))
                 self.materials_list.addItem(item)
                 self.materials_list.setItemWidget(item, widget)
-
+#sdifmijsdfijsmfjimsdfimsd
         else:
             self.materials_list.clear()
 
